@@ -26,12 +26,21 @@ def converter_para_matriz(filepath):
     print("Matriz NumPy:")
     print(matriz)
 
+#def realiza_teste():
+    
 # Criar janela principal
 janela = tk.Tk()
 janela.title("Escolher Imagem")
 
+# Definir o tamanho padrão da janela
+largura = 200
+altura = 200
+janela.geometry(f"{largura}x{altura}")
+
 # Botão para abrir o seletor de arquivos
 btn_selecionar = tk.Button(janela, text="Selecionar Imagem", command=abrir_seletor_arquivo)
+btn_teste = tk.Button(janela, text="Executar teste", command="")
+btn_teste.pack(pady=10)
 btn_selecionar.pack(pady=10)
 
 # Rótulo para exibir a imagem selecionada
