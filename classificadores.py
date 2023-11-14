@@ -99,25 +99,6 @@ sgd_clf.predict([X_test[23]])
 type(X_test)
 
 # %%
-def my_cross_val_score(clf, X_train: pd.array, y_train: pd.array):
-    skfolds = StratifiedKFold(n_splits=3, random_state=42, shuffle=True)
-
-    for train_index, test_index in skfolds.split(X_train, y_train):
-        clone_cfl = clone(clf)
-        X_train_folds = X_train[train_index]
-        y_train_folds = y_train[train_index]
-        X_test_folds = X_train[test_index]
-        y_test_folds = y_train[test_index]
-
-        clone_cfl.fit(X_train_folds, y_train_folds)
-        y_pred = clone_cfl.predict(X_test_folds)
-        n_correct = sum(y_pred == y_test_folds)
-        print((n_correct/len(y_pred)))
-
-# %%
-my_cross_val_score(sgd_clf, X_train, y_train_i)
-
-# %%
 cross_val_score(sgd_clf, X_train, y_train_i, cv=3, scoring='accuracy')
 
 # %%
@@ -126,6 +107,7 @@ y_train_pred = cross_val_predict(sgd_clf, X_train, y_train_i, cv=3)
 # %%
 print(f'Matriz de confusão do classificador SGD: {confusion_matrix(y_train_i, y_train_pred)}')
 
+print(f'Valor da acurácia: {cross_val_score(y_train_i, y_train)}')
 # %%
 print(f'Valor da precisão: {precision_score(y_train_i, y_train_pred)}')
 
@@ -151,6 +133,7 @@ y_train_pred_RN = cross_val_predict(mlp_clf, X_train, y_train_i, cv=2)
 # %%
 print(f'Matriz de confusão do classificador MLP: {confusion_matrix(y_train_i, y_train_pred_RN)}')
 
+print(f'Valor da acurácia: {cross_val_score(y_train_i, y_train_pred_RN)}')
 # %%
 print(f'Valor da precisão: {precision_score(y_train_i, y_train_pred_RN)}')
 
@@ -185,7 +168,6 @@ def somar_valores_antes_depois_indice(dicionario, indice, valor_maximo):
 
 def plotar_histograma_imagem(imagem):
 
-
     # Calcular o histograma usando a função cv2.calcHist()
     histograma = cv2.calcHist([imagem], [0], None, [256], [0, 256])
 
@@ -216,8 +198,7 @@ def plotar_histograma_imagem(imagem):
     plt.xlabel('Valores de Pixel')
     plt.ylabel('Número de Pixels')
     plt.show()
-
-    print(limiar)
+    
     return limiar
 
 def classificar_imagem(classificador, caminho_da_imagem):
