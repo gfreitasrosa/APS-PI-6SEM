@@ -1,4 +1,4 @@
-from metodos_avaliativos import *
+from classificadores import *
 import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
