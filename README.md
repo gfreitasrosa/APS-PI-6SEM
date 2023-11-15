@@ -1,4 +1,4 @@
-# Atividade Prática Supervisionada - 3º Semestre CC
+# Atividade Prática Supervisionada - 6º Semestre CC
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![Badge Linguagem](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
@@ -29,26 +29,26 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
 
 ## ❓ Como rodar o programa?
 
-### Passo 1:
+### Windowns
+
+#### Passo 1:
   -  Clonar o repositório ou baixa-lo
-### Passo 2:
-  -  Criar e ativar um ambiente virtual python 3.9.5:
+#### Passo 2:
+  -  Criar e ativar um ambiente virtual (Foi utilizado o python 3.9.5):
  
   ```bash
   1 - python -m venv nome_do_seu_ambiente
-
-  2 - python -m venv nome_do_seu_ambiente
   
-  3 - cd nome_do_seu_ambiente\Scripts\activate
+  2 - cd nome_do_seu_ambiente\Scripts\activate
   ```
-### Passo 3
+#### Passo 3
   - Já com o ambiente virtual ativado, instalar as libs usando:
 
   ```bash
   pip install -r requirements.txt
   ```
-### Passo 4
-  - Após isso já será possível rodar o programa, executando o arquivo python main.py
+#### Passo 4
+  - Após isso já será possível rodar o programa, executando o arquivo main.py
 
 >[!NOTE]
    >
