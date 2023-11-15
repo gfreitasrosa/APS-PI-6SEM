@@ -29,6 +29,29 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
 
 ## ❓ Como rodar o programa?
 
-Para rodar o programa é necessário fazer baixar o arquivo .zip como citado acima ou clonar o repositório, já com o repositório clonado ou baixado é necessário executar o "pip install requirements.txt" para instalar todas as libs utilizadas e então rodar o arquivo.py
+### Passo 1:
+  -  Clonar o repositório ou baixa-lo
+### Passo 2:
+  -  Criar e ativar um ambiente virtual python 3.9.5:
+ 
+  ```bash
+  1 - python -m venv nome_do_seu_ambiente
+
+  2 - python -m venv nome_do_seu_ambiente
+  
+  3 - cd nome_do_seu_ambiente\Scripts\activate
+  ```
+### Passo 3
+  - Já com o ambiente virtual ativado, instalar as libs usando:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+### Passo 4
+  - Após isso já será possível rodar o programa, executando o arquivo python main.py
+
+>[!NOTE]
+   >
+   >É importando que as hierarquias de repositórios estejam corretas e o caminho para o pathlib no programa classificadores.py esteja apontando para o dataset correto.
 
 ### *Desenvolvedores*:
