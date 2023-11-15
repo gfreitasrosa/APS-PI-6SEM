@@ -48,7 +48,7 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
   pip install -r requirements.txt
   ```
 #### Passo 4
-  - Após isso já será possível rodar o programa, executando o arquivo python main.py
+  - Após isso já será possível rodar o programa, executando o arquivo main.py
 
 >[!NOTE]
    >
