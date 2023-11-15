@@ -15,7 +15,6 @@ from PIL import Image
 import cv2
 import matplotlib.pyplot as plt
 
-
 # %%
 dataset_path = Path(os.path.join('C:',os.sep, 'Users', 'Gabriel', 'Desktop', 'FACUL 6ª SEM', 'APS-PI-6SEM', 'dataset', 'V20220930_partial'))
 
@@ -57,7 +56,6 @@ for key, files in label_to_file.items():
 X_reshaped = [x.reshape(-1) for x in X]
 X_reshaped = np.array(X_reshaped)
 
-
 # %%
 y = np.array(y)
 
@@ -72,13 +70,9 @@ split_test_threshold = 0.2
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X_reshaped, y, test_size=0.2, random_state=42)
 
-
 # %%
 y_train_i = (y_train==True)
 y_test_i = (y_test==True)
-
-# %%
-y_train_i[0]
 
 # Classificador SGD
 
@@ -87,16 +81,7 @@ sgd_clf = SGDClassifier(random_state=42)
 sgd_clf.fit(X_train, y_train_i)
 
 # %%
-y_test[23]
-
-# %%
-type(y_test)
-
-# %%
 sgd_clf.predict([X_test[23]])
-
-# %%
-type(X_test)
 
 # %%
 cross_val_score(sgd_clf, X_train, y_train_i, cv=3, scoring='accuracy')
@@ -107,7 +92,9 @@ y_train_pred = cross_val_predict(sgd_clf, X_train, y_train_i, cv=3)
 # %%
 print(f'Matriz de confusão do classificador SGD: {confusion_matrix(y_train_i, y_train_pred)}')
 
+# %%
 print(f'Valor da acurácia: {cross_val_score(y_train_i, y_train)}')
+
 # %%
 print(f'Valor da precisão: {precision_score(y_train_i, y_train_pred)}')
 
@@ -116,32 +103,6 @@ print(f'Valor do recall: {recall_score(y_train_i, y_train_pred)}')
 
 # %%
 print(f'Valor do f1 score: {f1_score(y_train_i, y_train_pred)}')
-
-# %% [markdown]
-# Rede Neural:
-
-# %%
-mlp_clf = MLPClassifier(hidden_layer_sizes=(100, 50), activation='relu', solver='sgd', random_state=42)
-mlp_clf.fit(X_train, y_train_i)
-
-# %%
-#mlp_clf.predict([d2_X_test[0]])
-
-# %%
-y_train_pred_RN = cross_val_predict(mlp_clf, X_train, y_train_i, cv=2)
-
-# %%
-print(f'Matriz de confusão do classificador MLP: {confusion_matrix(y_train_i, y_train_pred_RN)}')
-
-print(f'Valor da acurácia: {cross_val_score(y_train_i, y_train_pred_RN)}')
-# %%
-print(f'Valor da precisão: {precision_score(y_train_i, y_train_pred_RN)}')
-
-# %%
-print(f'Valor do recall: {recall_score(y_train_i, y_train_pred_RN)}')
-
-# %%
-print(f'Valor do f1 score: {f1_score(y_train_i, y_train_pred_RN)}')
 
 # %%
 # Função para classificar uma imagem
@@ -153,6 +114,7 @@ def pretty_print_mnist_number(number: np.array):
         res += '\n'
     print(res)
 
+# %%
 def imagem_to_cinza(matrix_colorida: np.array) -> np.array:
     return cv2.cvtColor(matrix_colorida, cv2.COLOR_RGB2GRAY)
 '''
@@ -166,6 +128,7 @@ def somar_valores_antes_depois_indice(dicionario, indice, valor_maximo):
         return indice+1
 '''
 
+# %%
 def plotar_histograma_imagem(imagem):
 
     # Calcular o histograma usando a função cv2.calcHist()
@@ -201,6 +164,7 @@ def plotar_histograma_imagem(imagem):
     
     return limiar
 
+# %%
 def classificar_imagem(classificador, caminho_da_imagem):
     
     # Carregar a imagem

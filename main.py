@@ -1,8 +1,8 @@
-from classificadores.classificadores import *
+#from classificadores.classificadores import *
+from classificadores.classificador_mlp import *
+from classificadores.classificador_sgd import *
 import tkinter as tk
 from tkinter import filedialog
-from PIL import Image, ImageTk
-import numpy as np
 
 def executar_mlp():
     filepath = filedialog.askopenfilename(
@@ -10,7 +10,8 @@ def executar_mlp():
         filetypes=[("Arquivos de imagem", (".png", ".jpg", ".jpeg", ".gif"))]
     )
     if filepath:
-        classificar_imagem(mlp_clf, filepath)
+        classificar_imagem_mlp(mlp_clf, filepath)
+
 
 def executar_sgd():
     filepath = filedialog.askopenfilename(
@@ -20,17 +21,6 @@ def executar_sgd():
     if filepath:
         classificar_imagem(sgd_clf, filepath)
 
-'''
-def exibir_imagem(filepath):
-    imagem = Image.open(filepath)
-    imagem = imagem.resize((300, 300), Image.ANTIALIAS)
-    imagem = ImageTk.PhotoImage(imagem)
-
-    label_imagem.config(image=imagem)
-    label_imagem.imagem = imagem
-'''
-
-#def realiza_teste():
     
 # Criar janela principal
 janela = tk.Tk()
