@@ -34,7 +34,7 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
 #### Passo 1:
   -  Clonar o repositório ou baixa-lo
 #### Passo 2:
-  -  Criar e ativar um ambiente virtual python 3.9.5:
+  -  Criar e ativar um ambiente virtual (Foi utilizado o python 3.9.5):
  
   ```bash
   1 - python -m venv nome_do_seu_ambiente
