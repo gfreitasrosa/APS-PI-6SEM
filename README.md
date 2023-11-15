@@ -26,4 +26,8 @@ As técnicas e avaliação de cada técnica deverão ser apresentadas no trabalh
 
 Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/APS-PI-6SEM/tree/main) ou [baixá-lo](https://github.com/gfreitasrosa/APS-PI-6SEM/archive/refs/heads/main.zip)
 
+## Como rodar o programa?
+
+Para rodar o programa é necessário fazer baixar o arquivo .zip como citado acima ou clonar o repositório, já com o repositório clonado ou baixado é necessário executar o "pip install requirements.txt" para instalar todas as libs utilizadas e então rodar o arquivo.py
+
 ### *Desenvolvedores*:
