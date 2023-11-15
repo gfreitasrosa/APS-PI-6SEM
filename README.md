@@ -1,4 +1,4 @@
-# Atividade Prática Supervisionada - 3º Semestre CC
+# Atividade Prática Supervisionada - 6º Semestre CC
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![Badge Linguagem](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
