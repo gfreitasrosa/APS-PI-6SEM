@@ -29,9 +29,11 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
 
 ## ❓ Como rodar o programa?
 
-### Passo 1:
+### Windowns
+
+#### Passo 1:
   -  Clonar o repositório ou baixa-lo
-### Passo 2:
+#### Passo 2:
   -  Criar e ativar um ambiente virtual python 3.9.5:
  
   ```bash
@@ -39,13 +41,13 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
   
   2 - cd nome_do_seu_ambiente\Scripts\activate
   ```
-### Passo 3
+#### Passo 3
   - Já com o ambiente virtual ativado, instalar as libs usando:
 
   ```bash
   pip install -r requirements.txt
   ```
-### Passo 4
+#### Passo 4
   - Após isso já será possível rodar o programa, executando o arquivo python main.py
 
 >[!NOTE]
