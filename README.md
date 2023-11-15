@@ -25,7 +25,7 @@ As técnicas e avaliação de cada técnica deverão ser apresentadas no trabalh
 
 ## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/APS-PI-6SEM/tree/main) ou [baixá-lo](https://github.com/gfreitasrosa/APS-PI-6SEM/archive/refs/heads/main.zip)
+Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/APS-PI-6SEM/tree/main), [baixá-lo](https://github.com/gfreitasrosa/APS-PI-6SEM/archive/refs/heads/main.zip) ou clonar o repositório.
 
 ## ❓ Como rodar o programa?
 
