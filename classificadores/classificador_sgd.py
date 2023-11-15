@@ -4,14 +4,9 @@ import os
 import pandas as pd
 from pathlib import Path
 from matplotlib.image import imread
-import pickle as plk
 from sklearn.linear_model import SGDClassifier
-from sklearn.model_selection import StratifiedShuffleSplit
-from sklearn.model_selection import StratifiedKFold, cross_val_score, cross_val_predict
-from sklearn.base import clone, BaseEstimator
-from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score, precision_recall_curve, roc_curve, roc_auc_score
-from PIL import Image
+from sklearn.model_selection import cross_val_score, cross_val_predict
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
 import cv2
 import matplotlib.pyplot as plt
 
@@ -165,7 +160,7 @@ def plotar_histograma_imagem(imagem):
     return limiar
 
 # %%
-def classificar_imagem(classificador, caminho_da_imagem):
+def classificar_imagem_sgd(classificador, caminho_da_imagem):
     
     # Carregar a imagem
     imagem = Image.open(caminho_da_imagem)

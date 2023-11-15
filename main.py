@@ -19,7 +19,7 @@ def executar_sgd():
         filetypes=[("Arquivos de imagem", (".png", ".jpg", ".jpeg", ".gif"))]
     )
     if filepath:
-        classificar_imagem(sgd_clf, filepath)
+        classificar_imagem_sgd(sgd_clf, filepath)
 
     
 # Criar janela principal
