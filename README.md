@@ -36,10 +36,8 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
  
   ```bash
   1 - python -m venv nome_do_seu_ambiente
-
-  2 - python -m venv nome_do_seu_ambiente
   
-  3 - cd nome_do_seu_ambiente\Scripts\activate
+  2 - cd nome_do_seu_ambiente\Scripts\activate
   ```
 ### Passo 3
   - Já com o ambiente virtual ativado, instalar as libs usando:
