@@ -59,8 +59,8 @@ Você pode [acessar o código fonte do projeto](https://github.com/gfreitasrosa/
 <table align="center">
   <tr>
     <td align="center"><a href="https://github.com/gfreitasrosa"><img src="https://avatars.githubusercontent.com/u/81601748?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Rosa</b></sub></a><br /><a href="https://github.com/gfreitasrosa/APS-PI-6SEM/commits?author=gfreitasrosa"</td>
-    <td align="center"><a href="https://github.com/liviaclima"><img src="https://avatars.githubusercontent.com/u/93229166?v=4" width="100px;" alt="" title="calvo aos 20"/><br /><sub><b>Livia Lima</b></sub></a><br /><a href="https://github.com/gfreitasrosa/APS-PI-6SEM/commits?author=liviaclima"</td>
-    <td align="center"><a href="https://github.com/GabrielTSouza28"><img src="https://avatars.githubusercontent.com/u/89994181?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Souza</b></sub></a><br /><a href="https://github.com/gfreitasrosa/APS-PI-6SEM/commits?author=GabrielTSouza28" </td>
+    <td align="center"><a href="https://github.com/liviaclima"><img src="https://avatars.githubusercontent.com/u/100315074?v=4" width="100px;" alt="" title="calvo aos 20"/><br /><sub><b>Livia Lima</b></sub></a><br /><a href="https://github.com/gfreitasrosa/APS-PI-6SEM/commits?author=liviaclima"</td>
+    <td align="center"><a href="https://github.com/GabrielTSouza28"><img src="https://avatars.githubusercontent.com/u/100314909?v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Souza</b></sub></a><br /><a href="https://github.com/gfreitasrosa/APS-PI-6SEM/commits?author=GabrielTSouza28" </td>
     <td align="center"><a href="https://github.com/Bryanow"><img src="https://avatars.githubusercontent.com/u/91998706?v=4" width="100px;" alt=""/><br /><sub><b>Bryan Ricardo</b></sub></a><br /><a href="https://github.com/gfreitasrosa/APS-3/commits?author=Bryanow"</td>
     <td align="center"><a href="https://github.com/SamuelQNunes"><img src="https://avatars.githubusercontent.com/u/115753584?v=4" width="100px;" alt=""/><br /><sub><b>Samuel Nunes</b></sub></a><br /><a href="https://github.com/gfreitasrosa/APS-3/commits?author=Bryanow"</td>
   </tr>
