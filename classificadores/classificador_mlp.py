@@ -3,7 +3,7 @@ import numpy as np
 import os
 from pathlib import Path
 from matplotlib.image import imread
-from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import cross_val_predict, cross_val_score
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
 from PIL import Image
@@ -82,10 +82,12 @@ mlp_clf.fit(X_train, y_train_i)
 y_train_pred_RN = cross_val_predict(mlp_clf, X_train, y_train_i, cv=2)
 
 # %%
-print(f'Matriz de confusão do classificador MLP: {confusion_matrix(y_train_i, y_train_pred_RN)}')
+print('Matriz de confusão do classificador MLP:')
+print(confusion_matrix(y_train_i, y_train_pred_RN))
 
 # %%
-print(f'Valor da acurácia: {cross_val_score(y_train_i, y_train_pred_RN)}')
+acuracia = cross_val_score(mlp_clf, X_train, y_train_i, cv=3, scoring='accuracy')
+print(f'Valor da acurácia: {acuracia}')
 
 # %%
 print(f'Valor da precisão: {precision_score(y_train_i, y_train_pred_RN)}')

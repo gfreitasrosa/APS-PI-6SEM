@@ -1,4 +1,5 @@
 # %%
+from tkinter import Image
 import numpy as np
 import os
 import pandas as pd
@@ -85,10 +86,12 @@ cross_val_score(sgd_clf, X_train, y_train_i, cv=3, scoring='accuracy')
 y_train_pred = cross_val_predict(sgd_clf, X_train, y_train_i, cv=3)
 
 # %%
-print(f'Matriz de confusão do classificador SGD: {confusion_matrix(y_train_i, y_train_pred)}')
+print('Matriz de confusão do classificador SGD:')
+print(confusion_matrix(y_train_i, y_train_pred))
 
 # %%
-print(f'Valor da acurácia: {cross_val_score(y_train_i, y_train)}')
+acuracia = cross_val_score(sgd_clf, X_train, y_train_i, cv=3, scoring='accuracy')
+print(f'Valor da acurácia: {acuracia}')
 
 # %%
 print(f'Valor da precisão: {precision_score(y_train_i, y_train_pred)}')
